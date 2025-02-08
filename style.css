@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+body{
+    background: rgb(255,255,255);
+    background: linear-gradient(99deg, rgba(255,255,255,1) 0%, rgba(215,255,254,1) 100%);
+}
+.container{
+    width: 1070px;
+    margin: 0 auto;
+}
+.main-block{
+    margin-top: 40px;
+}
+.restart-btn{
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    width: 36px;
+    height: 35px;
+    padding: 1px 0px 0px 1px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.08s ease-in;
+}
+.restart-btn:hover{
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
+.main-block .title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.main-block .cards-block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+.cards-block .card{
+    width: 130px;
+    height: 130px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.350);
+    padding: 10px;
+    cursor: pointer;
+}
+.card > img{
+    width: 85px;
+    margin-left: 11px;
+}
+.card > p{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.main-block .baskets-block{
+    display: flex;
+    justify-content: space-between;
+}
+.baskets-block .basket{
+    position: relative;
+    width: 306px;
+    height: 246px;
+    border-radius: 15px 15px 50px 50px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.250);
+    padding: 45px 70px;
+}
+.basket > img{
+    width: 150px;
+}
+.basket > h1{
+    color: white;
+    font-size: 32px;
+    font-weight: 400;
+    position: absolute;
+    top: 111px;
+    left: 111px;
+    z-index: 1000;
+
+}
+.baskets-block .basket-1{
+    background: rgb(212,252,121);
+    background: linear-gradient(99deg, rgba(212,252,121,1) 0%, rgba(150,230,161,1) 100%);
+}
+.baskets-block .basket-2{
+    background: rgb(237,110,160);
+    background: linear-gradient(99deg, rgba(237,110,160,1) 0%, rgba(236,140,105,1) 100%);
+}
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
